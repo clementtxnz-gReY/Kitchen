@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitchen/SignUp</title>
+
+     <link rel="icon" type="image/png" href="images/gReY.png" >
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f2f2f2;
+    }
+    .wrapper{
+        width: 500px;
+        background: rgb(250, 1, 250);
+        box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.623);
+        padding: 20px;
+        height: auto;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .container{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .container input{
+        height: 30px;
+        border-radius: 20px;
+        border: none;
+        box-shadow: 2px 2px 5px black;
+        padding-left: 10px;
+    }
+    .container span{
+        padding-left: 10px;
+        padding-bottom: 5px;
+        font-size: larger;     
+    }
+    .create-btn{
+        font-size: 20px;
+        padding: 5px;
+        background: lightblue;
+        border-radius: 10px;
+    }
+    .Go-back{
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 30px;
+        
+    }
+    .Go-back a{
+        color: black;
+    }
+</style>
+<body>
+    <span class="Go-back"><a href="index.html">Back</a></span>
+    <div class="wrapper">
+        <h1 style="border-bottom: 4px solid rgba(0, 0, 0, 0.589); width: 80%; text-align: center;"><span style="color: wheat;">K</span>itchen</h1>
+        <form action="" class="container">
+            <div style="display: flex; flex-direction: column;">
+                <span>email:</span>
+                <input type="email" >
+            </div>
+
+            <div style="display: flex; flex-direction: column;">
+                <span>password:</span>
+                <input type="password" >
+            </div>
+
+            <div style="display: flex; flex-direction: column;">
+                <span>confirm-password:</span>
+                <input type="password" >
+            </div>
+        </form>
+        <button class="create-btn">Create Account</button>
+    </div>
+</body>
+</html>
